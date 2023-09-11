@@ -60,7 +60,7 @@ app.delete('/employee/:eid', (req, resp) => {
         return resp.status(404).send('invalid id')
     }
     var e = emp.find((a) => {
-        return a.eid === parseInt(req.params.id)
+        return a.eid === parseInt(req.params.eid)
     });
 
     if (!e) {
