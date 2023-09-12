@@ -1,13 +1,17 @@
 package org.coforge.bean;
 
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
+
 /**
- * 
- * 
- * 
+ *  
  * @author Training
  *   This is user bean class with constructor dependency
  */
-
+@AllArgsConstructor
+@ToString
+@EqualsAndHashCode
 public class User {
 
 	
@@ -30,18 +34,6 @@ public class User {
 	
 	public void destroy() {
 		System.out.println("destroy called");
-	}
-	
-	public User(int userId, String userName, float userSalary) {
-		super();
-		this.userId = userId;
-		this.userName = userName;
-		this.userSalary = userSalary;
-	}
-
-	@Override
-	public String toString() {
-		return "User [userId=" + userId + ", userName=" + userName + ", userSalary=" + userSalary + "]";
 	}
 	
 	
