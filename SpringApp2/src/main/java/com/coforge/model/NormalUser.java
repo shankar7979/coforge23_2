@@ -9,7 +9,7 @@ import lombok.Data;
 
 @Data
 @Component("nuser")
-@Primary
+//@Primary
 public class NormalUser extends User {
 
 	@PostConstruct
