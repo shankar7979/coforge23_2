@@ -4,17 +4,19 @@ package com.example.SpringBootApp1;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.example.model.Bus;
 import com.example.model.Employee;
 import com.example.model.Product;
 
-@SpringBootApplication(scanBasePackages = { "com.example.model","com.example.config" })
+@SpringBootApplication(scanBasePackages = { "com.example.model", "com.example.config" })
 
 //or = below 3 annotation
 //@ComponentScan(basePackages = { "com.example.model","com.example.config" })
 //@EnableAutoConfiguration
 //@SpringBootConfiguration
+
 
 public class SpringBootApp1Application {
 
