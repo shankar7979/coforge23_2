@@ -14,7 +14,6 @@ public class CustomerMain {
 	public static void main(String[] args) {
 
 		ApplicationContext ctx = new AnnotationConfigApplicationContext(CustomerConfig.class);
-		//CustomerDaoImpl dao = ctx.getBean(CustomerDaoImpl.class);
 		 CustomerDao dao = ctx.getBean(CustomerDao.class);
 
 		Customer customer = new Customer();
