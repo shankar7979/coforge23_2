@@ -34,7 +34,7 @@ public class AppConfig {
 		p.setProperty(AvailableSettings.PASS, "root");
 		p.setProperty(AvailableSettings.DIALECT, "org.hibernate.dialect.MySQL5Dialect");
 		p.setProperty(AvailableSettings.SHOW_SQL, "true");
-		//p.setProperty(AvailableSettings.HBM2DDL_AUTO, "create");
+		p.setProperty(AvailableSettings.HBM2DDL_AUTO, "update");
 
 		return p;
 	}
