@@ -9,12 +9,11 @@ import com.coforge.dao.CustomerDao;
 import com.coforge.dao.CustomerDaoImpl;
 import com.coforge.model.Customer;
 
-@ComponentScan( basePackages = { "com.coforge.dao"})
 public class CustomerMain {
 	public static void main(String[] args) {
 
 		ApplicationContext ctx = new AnnotationConfigApplicationContext(CustomerConfig.class);
-		 CustomerDao dao = ctx.getBean(CustomerDao.class);
+		CustomerDao dao = ctx.getBean(CustomerDao.class);
 
 		Customer customer = new Customer();
 		customer.setName("kamal singh");
