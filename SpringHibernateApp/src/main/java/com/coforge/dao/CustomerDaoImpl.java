@@ -1,7 +1,6 @@
 package com.coforge.dao;
 
 import javax.transaction.Transactional;
-
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Repository;
