@@ -10,3 +10,26 @@ public class ProductMain {
 		SpringApplication.run(ProductMain.class, args);
 	}
 }
+
+/*
+  { 
+   
+    "prdName": "book",
+    "prdCost": 450,
+    "prdMfd":"2022-08-12",
+    "orderSet1":[
+        {
+            "totalCount":20,
+            "totalCost":1200
+        },
+        {
+            "totalCount":30,
+            "totalCost":1900
+        },
+        {
+            "totalCount":10,
+            "totalCost":900
+        }
+    ]
+ }
+ */
