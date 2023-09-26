@@ -1,0 +1,31 @@
+<div class="container">
+<table class="table  bg-success  text-light table-bordered mt-5 pt-5 w-50">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Salary</th>
+
+    </tr>
+    <tr *ngFor="let emp of employee">
+      <td>{{emp.id}}</td>
+      <td>{{emp.name}}</td>
+      <td>{{emp.salary}}</td>
+    </tr>
+
+</table>
+<p>property binding</p>
+<div class="border p-5 w-50 bg-primary">
+<img [src]="img1" [width]="img_width" height="img_height">
+</div>
+
+<div class="border p-5 w-50 bg-secondary mt-5">
+<img [src]="img2" [width]="img_width" height="img_height">
+</div>
+
+<p>without property binding</p>
+
+<div class="border p-5 w-50 bg-info mt-5">
+<img src={{img3}} width="300" height="200">
+</div>
+
+</div>

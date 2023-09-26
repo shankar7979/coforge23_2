@@ -1,0 +1,121 @@
+<div class="container">
+    <table class="table table-bordered  table-striped w-25  m-5 p-5 border border-primary">
+        <tr>
+            <td>
+                <h1>User Page</h1>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label>id is {{id}}</label></td>
+        </tr>
+
+        <tr>
+            <td><label>name is {{name}}</label></td>
+        </tr>
+
+        <tr>
+            <td><label>salary is {{salary}}</label></td>
+        </tr>
+
+        <tr>
+            <td> <label>location is {{location}}</label></td>
+        </tr>
+
+        <tr>
+            <td><label>state is {{state}}</label></td>
+        </tr>
+
+    </table>
+
+    <h2> Car List </h2>
+    <table class="table table-bordered table-striped table-dark text-light">
+        <thead>
+            <tr>
+                <th>Car Registration No</th>
+                <th>Car Model </th>
+                <th>Car Cost</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let c of cars">
+                <td>{{c.carid}}</td>
+                <td>{{c.carmodel}}</td>
+                <td>{{c.carcost}}</td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+    <hr>
+
+    <form class="text-light bg-secondary p-5" style="border-radius:30px" (ngSubmit)="userInfo()">
+        <div class="form-group">
+            <label>Enter Id</label>
+            <input class="form-control" [(ngModel)]="id" name="id" placeholder="Enter Id">
+        </div>
+        <div class="form-group">
+            <label>Enter Name</label>
+            <input class="form-control" [(ngModel)]="name" name="name" placeholder="Enter Name">
+        </div>
+        <div class="form-group">
+            <label>Enter Salary</label>
+            <input class="form-control" [(ngModel)]="salary" name="salary" placeholder="Enter Salary">
+        </div>
+        <div class="form-group">
+            <label>Enter Location</label>
+            <input class="form-control" [(ngModel)]="location" name="location" placeholder="Enter Location">
+        </div>
+
+        <div class="form-group">
+            <label>Enter State</label>
+            <input class="form-control" [(ngModel)]="state" name="state" placeholder="Enter State">
+        </div>
+        <div class="form-group">
+
+            <input type="submit" class="btn btn-primary">
+            <input type="reset" class="btn btn-primary m-3">
+        </div>
+
+        <div class="border border-info w-50 ml-5 p-5 text-light bg-dark" style="border-radius:25px"
+            [hidden]="!submitted">
+            <div>
+                Id is {{id}}
+            </div>
+            <div>
+                name is {{name}}
+            </div>
+            <div>
+                Salary is {{salary}}
+            </div>
+            <div>
+                Location is {{location}}
+            </div>
+            <div>
+                State is {{state}}
+            </div>
+            <div [ngSwitch]="state" [ngClass]="{class1:true}">
+                <div *ngSwitchCase="'delhi'">capital is new delhi</div>
+                <div *ngSwitchCase="'up'">capital is lucknow</div>
+                <div *ngSwitchCase="'mp'">capital is bhopal</div>
+                <div *ngSwitchCase="'rajsthan'">capital is jaipur</div>
+                <div *ngSwitchCase="'haryana'">capital is chandigarh</div>
+                <div *ngSwitchCase="'punjab'">capital is chandigarh</div>
+                <div *ngSwitchCase="'tamilnadu'">capital is chennai</div>
+                <div *ngSwitchDefault>state not found</div>
+            </div>
+            <div [ngStyle]="{color: 'blue','background-color':'white','width':'30%'}">
+                <div *ngIf="salary>100000 && salary<=200000">
+                    Senior Manager
+                </div>
+                <div *ngIf="salary>50000 && salary<=100000">
+                    Manager
+                </div>
+                <div *ngIf="salary>30000 && salary<=50000">
+                    Cashier
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
