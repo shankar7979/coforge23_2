@@ -14,7 +14,6 @@ export class ShowallComponent {
 
   constructor(private service: ProductService) {
     this.prd = service.getAllProduct();
-
   }
 
 

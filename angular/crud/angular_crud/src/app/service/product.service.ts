@@ -15,4 +15,8 @@ export class ProductService {
     return this.http.get('http://localhost:8080/all');
   }
 
+  addproduct(product: Object): Observable<Object> {
+    return this.http.post('http://localhost:8080/add', product);
+  }
+
 }
