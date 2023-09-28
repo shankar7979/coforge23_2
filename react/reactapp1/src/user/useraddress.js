@@ -10,7 +10,6 @@ function UserAddress() {
                         <th>Address Location</th>
                         <th>Address State</th>
                     </tr>
-
                 </thead>
                 <tbody>
                     <tr>
@@ -31,7 +30,6 @@ function UserAddress() {
                     }
                 </tbody>
             </table>
-
         </div>
     )
 }

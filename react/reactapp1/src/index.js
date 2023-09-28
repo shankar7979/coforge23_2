@@ -4,12 +4,18 @@ import './index.css';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
 import User from './user';
+import Hello1 from './Hello1';
+import Book1 from './book';
+import News from './News';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <User />
+    {/* <User /> */}
+    {/* <Hello1></Hello1> */}
+    {/* <Book1></Book1> */}
+    <News langugae="hindi" article="election 2024"></News>
   </React.StrictMode>
 );
 
