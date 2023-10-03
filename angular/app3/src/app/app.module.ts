@@ -7,6 +7,8 @@ import { FormsModule } from '@angular/forms';
 import { SquarePipe } from './pipeexample/square.pipe';
 import { ProductComponent } from './product/product.component';
 import { EmployeeComponent } from './employee/employee.component';
+import { ParentComponent } from './parent-child/parent/parent.component';
+import { ChildComponent } from './parent-child/child/child.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { EmployeeComponent } from './employee/employee.component';
     SquarePipe,
     ProductComponent,
     EmployeeComponent,
+    ParentComponent,
+    ChildComponent,
   ],
   imports: [
     BrowserModule,
