@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import { BrowserRouter as Router } from "react-router-dom";
+
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
 import User from './user';
@@ -12,7 +14,9 @@ import Counter1 from './Counter1';
 import Address from './person/PersonInfo';
 import PersonInfo from './person/PersonInfo';
 import UserForm from './UserForm1';
-
+import UnControlledForm from './UnControlledForm';
+import Counter2 from './hook/Counter2';
+import Dashboard from './dashboard';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -24,8 +28,12 @@ root.render(
     {/* <Counter1></Counter1> */}
     {/* <Person></Person> */}
     {/* <PersonInfo></PersonInfo> */}
-    <UserForm></UserForm>
-  </React.StrictMode>
+    {/* <UserForm></UserForm> */}
+    {/* <UnControlledForm></UnControlledForm>*/}
+    {/* <Counter2></Counter2> */}
+  <Dashboard></Dashboard>
+    </React.StrictMode> 
+
 );
 
 // If you want to start measuring performance in your app, pass a function
