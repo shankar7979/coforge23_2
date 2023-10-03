@@ -14,4 +14,8 @@ export class ChildComponent {
     this.Counter = this.Counter + 1;
     this.valueChange.emit(this.Counter);
   }
+  //=============================================
+  
 }
+
+//https://gist.github.com/kevinchisholm/7a551554ec77950e13a1e6aa0a5d5475

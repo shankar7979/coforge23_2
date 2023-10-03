@@ -9,6 +9,9 @@ import { ProductComponent } from './product/product.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { ParentComponent } from './parent-child/parent/parent.component';
 import { ChildComponent } from './parent-child/child/child.component';
+import { Parent1Component } from './parent-child1/parent1/parent1.component';
+import { Child1Component } from './parent-child1/child1/child1.component';
+import { Child2Component } from './parent-child1/child2/child2.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,9 @@ import { ChildComponent } from './parent-child/child/child.component';
     EmployeeComponent,
     ParentComponent,
     ChildComponent,
+    Parent1Component,
+    Child1Component,
+    Child2Component,
   ],
   imports: [
     BrowserModule,
