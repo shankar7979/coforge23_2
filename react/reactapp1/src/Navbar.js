@@ -1,8 +1,10 @@
 import { NavLink } from 'react-router-dom'
+import UserForm from './UserForm1'
 
 export const Navbar = () => {
- 
+
   return (
+    <>
     <nav className="nav navbar-dark bg-light text-primary navbar-expand-sm">
       <NavLink to='/userform' style={{ marginLeft: '300px' }} >
         User Form
@@ -16,7 +18,13 @@ export const Navbar = () => {
       <NavLink to='/counter2' style={{ marginLeft: '100px' }}>
         Counter2
       </NavLink>
-     
-    </nav>
+
+      <NavLink to='/fetchdata' style={{ marginLeft: '100px' }}>
+        Fetch Data
+      </NavLink>
+
+      </nav>
+      {/* <UserForm></UserForm> */}
+    </>
   )
 }

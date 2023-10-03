@@ -6,7 +6,7 @@ class Fetch extends Component {
     };
 
     componentDidMount() {
-        const url1 = "http://localhost:9090/product/all";
+        const url1 = "http://localhost:8080/all"
 
         fetch(url1)
             .then(result => result.json())
@@ -21,7 +21,14 @@ class Fetch extends Component {
         const { data1 } = this.state;
         const head = <thead><tr><th>Id</th><th>Name</th><th>Cost</th></tr></thead>;
         const result1 = data1.map((entry) => {
-            var mytable = <tbody> <tr><td>{entry.id}</td><td> {entry.name} </td><td>{entry.cost}</td></tr></tbody>;
+            var mytable = <tbody>
+                <tr>
+                    <td>{entry.prdId}</td>
+                    <td> {entry.prdName} </td>
+                    <td>{entry.prdCost}</td>
+                    <td>{entry.prdMfd}</td>
+                </tr>
+            </tbody>;
             return mytable;
         });
 
