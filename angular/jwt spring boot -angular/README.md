@@ -4,7 +4,7 @@ On Windows command prompt:
 
 set NODE_OPTIONS=--openssl-legacy-provider
 
-angular.json 
+angular.json
 
 "start": "react-scripts --openssl-legacy-provider start"
 
