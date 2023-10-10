@@ -122,7 +122,7 @@ https://github.com/PaM02/spring-boot3-jwt-main
 
 
 https://github.com/caused/spring-boot3-jwt/tree/main
-
+-- https://www.youtube.com/watch?v=KxqlJblhzfI
 https://github.com/buingoctruong/springboot3-springsecurity6-jwt/tree/master
 
 https://medium.com/@truongbui95/jwt-authentication-and-authorization-with-spring-boot-3-and-spring-security-6-2f90f9337421
