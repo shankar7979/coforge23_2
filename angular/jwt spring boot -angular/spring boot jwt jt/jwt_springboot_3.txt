@@ -3,11 +3,8 @@ https://dl.ebooksworld.ir/books/Beginning.ReactJS.Foundations.Chris.Minnick.Wile
 https://ebin.pub/qdownload/spring-microservices-in-action-2nbsped-1617296953-9781617296956.html
 
 https://www.toptal.com/spring/spring-security-tutorial
-
 https://www.freecodecamp.org/news/content/images/2020/08/1.jpg
-
 https://www.bezkoder.com/wp-content/uploads/2019/10/in-depth-introduction-jwt-token-based-authentication.png
-
 
 
 https://www.codejava.net/images/articles/frameworks/springboot/jwt-auth/JWT_request_response.png
@@ -81,6 +78,7 @@ https://www.githubcode.com/spring-boot-angular-example-github/
 
 
 
+
 imp
 
 https://github.com/bezkoder/angular-11-spring-boot-jwt-authentication
@@ -98,12 +96,48 @@ https://www.techgeeknext.com/spring/angular-spring-boot-jwt-authentication
 https://codeload.github.com/techgeeknext/spring-boot-jwt/zip/refs/heads/master
 
 https://codeload.github.com/techgeeknext/angular8-spring-boot-jwt/zip/refs/heads/master
+
+
+
 https://github.com/techgeeknext/spring-boot-jwt
+
+
+
 https://github.com/techgeeknext/angular8-spring-boot-jwt
+
+
+
+
+
 
 
 jwt using spring boot 3
 
 https://github.com/jamesvrooney-spring-security/spring-boot-3-jwt
+
+
+
 https://github.com/PaM02/spring-boot3-jwt-main
+
+
+
 https://github.com/caused/spring-boot3-jwt/tree/main
+
+https://github.com/buingoctruong/springboot3-springsecurity6-jwt/tree/master
+
+https://medium.com/@truongbui95/jwt-authentication-and-authorization-with-spring-boot-3-and-spring-security-6-2f90f9337421
+
+
+
+https://docs.spring.io/spring-security/site/docs/5.3.x/reference/pdf/spring-security-reference.pdf
+
+
+
+
+
+
+
+
+
+
+
