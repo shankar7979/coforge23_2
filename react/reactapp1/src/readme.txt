@@ -9,10 +9,3 @@ cd  create-react-app reactapp1
 
 npm start
 
-routing
-
-npm i react-router-dom
-
-  for old project 
-   npm install 
-   or 
