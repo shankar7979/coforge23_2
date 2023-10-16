@@ -26,11 +26,7 @@ const Dashboard = () => {
             {/* <Navbar>inside routes will not render in every page   */}
 
             <Routes>
-                {/* <Route exact path="/" element={<Navbar/>}/> */}
-                {/* <Route index element={<Navbar />} /> */}
-                {/* <Route exact path="/" component={UserForm} /> */}
-
-                <Route path="/" element={<UserForm />} />
+                 <Route path="/" element={<UserForm />} />
                 <Route path="/userform" element={<UserForm />} />
                 <Route path="/userform1" element={<UserForm1 setUser={setUser} />} />
 
