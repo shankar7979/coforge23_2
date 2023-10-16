@@ -10,10 +10,12 @@ import {
 } from "react-router-dom";
 
 function EmployeeResult() {
-    let { id } = useParams();
+    let { userId } = useParams();
+    let { firstName } = useParams();
     return <div style={{ fontSize: "50px" }}>
         <h1>Employee Page</h1>
-        <p>Employee Id : {id}</p>
+        <p>Employee Id : {userId}</p>
+        <p>Employee Id : {firstName}</p>
     </div>;
 }
 
@@ -27,14 +29,12 @@ const onSubmitHandler = async (e) => {
 
     //if (!firstName) return;
     else {
-        // this.props.history.push(`/login/${this.state.firstName}`)
+        props.history.push(`/login/${userId}/${firstName}`)
         //setUser({ firstName: firstName, userId: userId });
         //setUserShow(false);  // uncomment to display below 
-        navigate('/login');  // uncomment to navigate to /login
+        //navigate('/login');  // uncomment to navigate to /login
     }
 }
-
-
 
 function HomePage() {
     const [firstName, setFirstName] = useState('');
@@ -82,7 +82,7 @@ function Params() {
     return (
         <Router>
             <Routes>
-                <Route path="/login/:id" element={<EmployeeResult />} />
+                <Route path="/login/:id/:firstName" element={<EmployeeResult />} />
                 <Route path="/" element={<HomePage />} />
             </Routes>
         </Router>
