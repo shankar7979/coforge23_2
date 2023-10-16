@@ -32,4 +32,8 @@ function Params() {
 export default Params;
 
 //http://localhost:3000/page/9999
-//https://github.com/andrebaltieri/react-hooks-axios-crud-sample/blob/master/src/components/PostList.jsx
+
+//https://github.com/andrebaltieri/react-hooks-axios-crud-sample/  -- imp
+//https://github.com/SimonPe25/Example-React-Router-6-
+ 
+//https://github.com/john-smilga/react-router-6-tutorial/   -- imp working params
