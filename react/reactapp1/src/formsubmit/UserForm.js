@@ -1,10 +1,11 @@
 import React, { Component, useState } from 'react';
 //import React, { useState, Fragment, Component } from "react";
 import { useNavigate } from "react-router-dom";
+
 export const UserForm1 = ({ setUser }) => {
   const [firstName, setFirstName] = useState('');
   const [userId, setUserId] = useState('');
-  const [userShow, setUserShow] = useState('true');
+  const [userShow, setUserShow] = useState(true);
   const navigate = useNavigate();
 
   const onSubmitHandler = async (e) => {
@@ -18,12 +19,13 @@ export const UserForm1 = ({ setUser }) => {
     //if (!firstName) return;
     else {
       setUser({ firstName: firstName, userId: userId });
-      navigate('/login');
+      //setUserShow(false);  // uncomment to display below 
+      navigate('/login');  // uncomment to navigate to /login
     }
   }
   return (
-    <div class="container">
-      <div class="p-5 w-75  bg-info" style={{ marginLeft: '150px', marginTop: '100px', }}>
+    <div className="container">
+      <div className="p-5 w-75  bg-info" style={{ marginLeft: '150px', marginTop: '100px', }}>
         <h1 style={{ marginLeft: '250px' }}>User Form</h1>
         <form onSubmit={onSubmitHandler}>
           <div className="form-group">
@@ -32,18 +34,25 @@ export const UserForm1 = ({ setUser }) => {
               name="userId" onChange={(e) => setUserId(e.target.value)} value={userId}
               className="form-control mt-3"
             />
+          </div>
+
+          <div className="form-group mt-3">
             <label>Enter the Name</label>
             <input type="text"
               name="firstName" onChange={(e) => setFirstName(e.target.value)} value={firstName}
               className="form-control mt-3"
+
             />
 
           </div>
+          <div className="form-group">
+            <button type="submit" className='btn btn-primary mt-2' onClick={onSubmitHandler}>Submit</button>
+            <button type="reset" className='btn btn-primary mt-2' style={{ 'marginLeft': '10px' }} >Cancel</button>
+          </div>
 
-          <div className="form-group mt-4">
-            {<p>"User Id: " {userId}</p>}
-            {<p>"FirstName: " {firstName}</p>}
-            <button type="submit" onClick={onSubmitHandler}>Submit</button>
+          <div className="form-group mt-4" hidden={userShow}>
+            {<p>"User Id : " {userId}</p>}
+            {<p>"FirstName : " {firstName}</p>}
           </div>
 
         </form>
@@ -52,5 +61,5 @@ export const UserForm1 = ({ setUser }) => {
   )
 }
 
-//export default Login;
+
 //https://github.com/john-smilga/react-router-6-tutorial

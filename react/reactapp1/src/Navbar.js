@@ -11,8 +11,9 @@ export const Navbar = () => {
         </NavLink>
 
         <NavLink to='/userform1' style={{ marginLeft: '50px' }} >
-          Navigate User Form
+          User Form Params
         </NavLink>
+
 
         <NavLink to='/uncontrolledform' style={{ marginLeft: '50px' }} >
           UnControlled Form

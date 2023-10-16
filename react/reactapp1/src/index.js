@@ -17,6 +17,7 @@ import UserForm from './UserForm1';
 import UnControlledForm from './UnControlledForm';
 import Counter2 from './hook/Counter2';
 import Dashboard from './dashboard';
+import Params from './formsubmit/example_userParam';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -32,9 +33,9 @@ root.render(
     {/* <UserForm></UserForm> */}
     {/* <UnControlledForm></UnControlledForm>*/}
     {/* <Counter2></Counter2> */}
-     <Dashboard></Dashboard> 
-    
-    </React.StrictMode> 
+    <Dashboard></Dashboard>
+    {/* <Params></Params> */}
+  </React.StrictMode>
 
 );
 

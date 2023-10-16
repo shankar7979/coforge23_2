@@ -15,6 +15,7 @@ import EmployeeForm from './hook/Employeeform';
 import UserData from './formsubmit/UserData';
 import { UserForm1 } from './formsubmit/UserForm';
 import { useState } from 'react';
+import Params from './formsubmit/example_userParam';
 
 const Dashboard = () => {
     const [user, setUser] = useState(null);
@@ -26,12 +27,12 @@ const Dashboard = () => {
             {/* <Navbar>inside routes will not render in every page   */}
 
             <Routes>
-                 <Route path="/" element={<UserForm />} />
+
+                <Route path="/" element={<UserForm />} />
                 <Route path="/userform" element={<UserForm />} />
                 <Route path="/userform1" element={<UserForm1 setUser={setUser} />} />
-
                 <Route path="/login" element={<UserData user={user} />} />
-
+                
 
                 <Route path="/uncontrolledform" element={<UnControlledForm />} />
                 <Route path="/hookform" element={<EmployeeForm />} />
@@ -39,10 +40,6 @@ const Dashboard = () => {
                 <Route path="/counter1" element={<Counter1 />} />
                 <Route path="/hookcounter" element={<Counter2 />} />
                 <Route path="/fetchdata" element={<Fetch />} />
-
-                {/* <Route path="*">
-                    <Navigate to="/" />
-                </Route>  */}
 
             </Routes>
         </Router>
