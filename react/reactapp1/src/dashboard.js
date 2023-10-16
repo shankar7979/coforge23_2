@@ -12,8 +12,12 @@ import UserForm from "./UserForm1"
 import Fetch from './database/Fetch'
 import EmployeeForm from './hook/Employeeform';
 
-const Dashboard = () => {
+import UserData from './formsubmit/UserData';
+import { UserForm1 } from './formsubmit/UserForm';
+import { useState } from 'react';
 
+const Dashboard = () => {
+    const [user, setUser] = useState(null);
     return (
         <Router>
 
@@ -28,6 +32,11 @@ const Dashboard = () => {
 
                 <Route path="/" element={<UserForm />} />
                 <Route path="/userform" element={<UserForm />} />
+                <Route path="/userform1" element={<UserForm1 setUser={setUser} />} />
+
+                <Route path="/login" element={<UserData user={user} />} />
+
+
                 <Route path="/uncontrolledform" element={<UnControlledForm />} />
                 <Route path="/hookform" element={<EmployeeForm />} />
                 <Route path="/personinfo" element={<PersonInfo />} />

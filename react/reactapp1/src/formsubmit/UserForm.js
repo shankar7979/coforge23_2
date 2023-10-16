@@ -1,51 +1,56 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 //import React, { useState, Fragment, Component } from "react";
+import { useNavigate } from "react-router-dom";
+export const UserForm1 = ({ setUser }) => {
+  const [firstName, setFirstName] = useState('');
+  const [userId, setUserId] = useState('');
+  const [userShow, setUserShow] = useState('true');
+  const navigate = useNavigate();
 
-import { withRouter } from 'react-router-dom';
-class UserForm extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      firstName: '',
-      showName: false
-    }
-  }
-  inputHandler = (e) => {
-    let updatedName = e.target.value;
-    this.setState({ firstName: updatedName });
-    console.log(updatedName+' updated name ');  
-  }
-  onSubmitHandler = (e) => {
+  const onSubmitHandler = async (e) => {
     e.preventDefault();
-    if (this.state.firstName === "") {
-      alert("First Name is  required");
-      return;
-    }
+    if (userId == '')
+      alert('user id is blank')
+
+    else if (firstName == '')
+      alert('first name is blank')
+
+    //if (!firstName) return;
     else {
-      this.props.history.push(`/login/${this.state.firstName}`)
-      //this.props.history.push(`/welcome/${this.state.username}`)
-      this.setState({
-        showName: true
-      });
+      setUser({ firstName: firstName, userId: userId });
+      navigate('/login');
     }
   }
-  render() {
-    return (
-      <div>
-        <h1>User Form</h1>
-        <form
-          onSubmit={this.onSubmitHandler}>
-          <label>Enter the Name</label>
-          <input type="text"
-            name="firstName" onChange={this.inputHandler} value={this.state.firstName} />
-          <br></br>
-          {this.state.showName && <p>"FirstName: " {this.state.firstName}</p>}
-          <button type="submit" onClick={this.onSubmitHandler}>Submit</button>
+  return (
+    <div class="container">
+      <div class="p-5 w-75  bg-info" style={{ marginLeft: '150px', marginTop: '100px', }}>
+        <h1 style={{ marginLeft: '250px' }}>User Form</h1>
+        <form onSubmit={onSubmitHandler}>
+          <div className="form-group">
+            <label>Enter User Id</label>
+            <input type="text"
+              name="userId" onChange={(e) => setUserId(e.target.value)} value={userId}
+              className="form-control mt-3"
+            />
+            <label>Enter the Name</label>
+            <input type="text"
+              name="firstName" onChange={(e) => setFirstName(e.target.value)} value={firstName}
+              className="form-control mt-3"
+            />
+
+          </div>
+
+          <div className="form-group mt-4">
+            {<p>"User Id: " {userId}</p>}
+            {<p>"FirstName: " {firstName}</p>}
+            <button type="submit" onClick={onSubmitHandler}>Submit</button>
+          </div>
+
         </form>
       </div>
-    );
-  }
+    </div>
+  )
 }
-//export default withRouter(UserForm);
-export default (UserForm);
+
+//export default Login;
+//https://github.com/john-smilga/react-router-6-tutorial
