@@ -1,32 +1,70 @@
-postman 
+postman
+
+user profile
+
 post method  body json 
 
 http://localhost:8080/auth/addNewUser
-
 {
-  "name":"suresh kumar",
-   "email":"suresh@ymail.com",
+  "name":"amit kumar",
+   "email":"amit@ymail.com",
    "password":"1234",
    "roles":"ROLE_USER"
 }
 
-
 post method   body json 
 http://localhost:8080/auth/generateToken
-
 {
-  "username":"suresh kumar",
+  "username":"amit kumar",
    "password":"1234"
 }
+
 it will generate token
 
 copy token 
 
 get method 
-
-authorization -->Type--> Bearer Token, rhs Token paste
+Authorization--> Type  Bearer Token --> in token(rhs) -- paste token value
 
 http://localhost:8080/auth/user/userProfile
 
-hit above
+output 
 Welcome to User Profile
+
+==========================================================
+
+admin profile
+
+post method  body json 
+
+http://localhost:8080/auth/addNewUser
+{
+  "name":"suresh kumar",
+   "email":"suresh@ymail.com",
+   "password":"1234",
+   "roles":"ROLE_ADMIN"
+}
+
+post method   body json 
+http://localhost:8080/auth/generateToken
+{
+  "username":"suresh kumar",
+   "password":"1234"
+}
+
+it will generate token
+
+copy token 
+
+get method 
+Authorization--> Type  Bearer Token --> in token(rhs) -- paste token value
+
+http://localhost:8080/auth/admin/adminProfile
+
+output 
+Welcome to Admin Profile
+
+
+admin profile
+
+
