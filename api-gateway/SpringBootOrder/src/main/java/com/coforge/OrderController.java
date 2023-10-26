@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -33,6 +34,11 @@ public class OrderController {
     @GetMapping("/search/{id}")
     public Order searchOrderById(@PathVariable("id") long id) {
         Stream<Order> orderStream = Stream.of(order).filter(a -> a.getId() == id);
-        return orderStream.findFirst().get();
+        // if(orderStream.findFirst().isEmpty())
+        //   return  null;
+        Optional<Order> first = orderStream.findFirst();
+        if (first.isPresent())
+            return first.get();
+        return null;
     }
 }
