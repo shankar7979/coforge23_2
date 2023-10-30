@@ -2,6 +2,9 @@ import React, { Component, useState } from 'react';
 //import React, { useState, Fragment, Component } from "react";
 import { useNavigate } from "react-router-dom";
 
+//setNavigate() may be used only in the context of a <Router> <Routes><Route>
+// use it with <Router> <Routes><Route>
+//
 export const UserForm1 = ({ setUser }) => {
   const [firstName, setFirstName] = useState('');
   const [userId, setUserId] = useState('');
