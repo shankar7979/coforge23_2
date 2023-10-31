@@ -402,30 +402,30 @@ export default function Navigate1() {
 ,25,26,27,28,30 oct 24 holiday dussehra -- -- spring boot1
 
 Hi
-
 In October following are classes details.
 
-3, 4, 5, 10, 11 classes
-
-6, 7, 9 leave 2nd oct holiday
-
 5 days
-
+3, 4, 5, 10, 11 classes
+--
+6, 7, 9 leave 2nd oct holiday
+--
+5 days
 12, 13, 14, 16, 17 classes
 
 5 days
-
 18, 20, 21, 23, 25 classes
 
 19 holiday.
-
 24 dussehra holiday.
 
-5 days.
+2 day
+25,26(half day till 11:40), 
 
-26, 27, 28, 30, 31
+27, 28 -- holiday auditing  
 
-5 days.
+3 days.
+30, 31,1 
+
 
 Total 20 days.
 
