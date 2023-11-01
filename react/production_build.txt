@@ -1,0 +1,7 @@
+for production mode 
+
+build for angular
+ ng build 
+
+build for react
+ npm run build

@@ -1,0 +1,11 @@
+for production mode 
+
+build for angular
+ ng build 
+
+build for react
+ npm run build
+
+
+using live-server or http-server 
+run it 
